@@ -28,9 +28,15 @@ const Index = () => {
     },
     {
       icon: 'Thermometer',
-      title: 'Радиаторы и теплые полы',
-      description: 'Монтаж радиаторов, систем теплого пола',
+      title: 'Радиаторы отопления',
+      description: 'Монтаж, замена и ремонт радиаторов',
       price: 'от 4000 ₽'
+    },
+    {
+      icon: 'Waves',
+      title: 'Водяные теплые полы',
+      description: 'Монтаж водяных теплых полов под ключ',
+      price: 'от 1200 ₽/м²'
     },
     {
       icon: 'PipeWrench',
@@ -89,6 +95,11 @@ const Index = () => {
       title: 'Прочистка канализации',
       before: '/placeholder.svg',
       after: '/placeholder.svg'
+    },
+    {
+      title: 'Монтаж водяного теплого пола',
+      before: 'img/33607a7f-ffb2-4cad-a9c2-5ac5fc99e72b.jpg',
+      after: 'img/33607a7f-ffb2-4cad-a9c2-5ac5fc99e72b.jpg'
     },
     {
       title: 'Комплексное отопление',
