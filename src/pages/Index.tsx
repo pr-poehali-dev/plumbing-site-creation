@@ -200,12 +200,14 @@ const Index = () => {
                 <Button size="lg" className="text-lg px-8" asChild>
                   <a href="tel:+79782973593">
                     <Icon name="Phone" className="mr-2 h-5 w-5" />
-                    Вызвать мастера
+                    Позвонить
                   </a>
                 </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8">
-                  <Icon name="Calculator" className="mr-2 h-5 w-5" />
-                  Рассчитать стоимость
+                <Button variant="outline" size="lg" className="text-lg px-8 bg-green-500 hover:bg-green-600 text-white border-green-500" asChild>
+                  <a href="https://wa.me/79782973593?text=Здравствуйте! Хочу заказать сантехнические работы" target="_blank" rel="noopener noreferrer">
+                    <Icon name="MessageSquare" className="mr-2 h-5 w-5" />
+                    WhatsApp
+                  </a>
                 </Button>
               </div>
             </div>
@@ -275,11 +277,17 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
               <a href="tel:+79782973593">
                 <Icon name="Phone" className="mr-2 h-5 w-5" />
                 Заказать услугу
+              </a>
+            </Button>
+            <Button size="lg" className="bg-green-500 hover:bg-green-600" asChild>
+              <a href="https://wa.me/79782973593?text=Хочу узнать стоимость услуг" target="_blank" rel="noopener noreferrer">
+                <Icon name="MessageSquare" className="mr-2 h-5 w-5" />
+                Написать в WhatsApp
               </a>
             </Button>
           </div>
@@ -415,7 +423,12 @@ const Index = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">WhatsApp</h3>
                 <p className="text-gray-600 mb-4">Быстрые сообщения</p>
-                <Button variant="outline">Написать в WhatsApp</Button>
+                <Button variant="outline" asChild>
+                  <a href="https://wa.me/79782973593?text=Здравствуйте! Хочу заказать сантехнические работы" target="_blank" rel="noopener noreferrer">
+                    <Icon name="MessageSquare" className="mr-2 h-4 w-4" />
+                    Написать в WhatsApp
+                  </a>
+                </Button>
               </CardContent>
             </Card>
 
