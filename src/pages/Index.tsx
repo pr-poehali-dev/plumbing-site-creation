@@ -169,8 +169,8 @@ const Index = () => {
 
             <div className="flex items-center space-x-4">
               <div className="hidden md:block text-right">
-                <p className="text-sm text-gray-600">Звоните прямо сейчас</p>
-                <p className="text-lg font-semibold text-gray-900">+7 (999) 123-45-67</p>
+                <p className="text-sm text-gray-600">Звоните с 9:00 до 17:00</p>
+                <p className="text-lg font-semibold text-gray-900">+7 (978) 297-35-93</p>
               </div>
               <Button>Вызвать мастера</Button>
             </div>
@@ -330,7 +330,7 @@ const Index = () => {
             <div className="animate-fade-in">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">О мастере</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Меня зовут Алексей, и я занимаюсь сантехническими работами уже более 14 лет. 
+                Меня зовут Игорь, и я занимаюсь сантехническими работами уже более 14 лет. 
                 За это время выполнил свыше 2000 заказов различной сложности.
               </p>
               <div className="space-y-4 mb-8">
@@ -359,7 +359,7 @@ const Index = () => {
                   <div className="bg-white/20 rounded-full p-6 mb-6 mx-auto w-24 h-24 flex items-center justify-center">
                     <Icon name="User" className="h-12 w-12 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">Алексей Петров</h3>
+                  <h3 className="text-2xl font-bold mb-2">Игорь</h3>
                   <p className="text-primary-foreground/80 mb-6">Сантехник-профессионал</p>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
@@ -393,8 +393,8 @@ const Index = () => {
                   <Icon name="Phone" className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Телефон</h3>
-                <p className="text-gray-600 mb-4">Звоните в любое время</p>
-                <p className="text-xl font-bold text-primary">+7 (999) 123-45-67</p>
+                <p className="text-gray-600 mb-4">Пн-Сб: 9:00-17:00, Вс: выходной</p>
+                <p className="text-xl font-bold text-primary">+7 (978) 297-35-93</p>
               </CardContent>
             </Card>
 
