@@ -15,34 +15,46 @@ const Index = () => {
 
   const services = [
     {
-      icon: 'Wrench',
-      title: 'Устранение засоров',
-      description: 'Прочистка труб, канализации, раковин любой сложности',
-      price: 'от 1500 ₽'
+      icon: 'Flame',
+      title: 'Газовые котлы',
+      description: 'Установка, обслуживание и ремонт газовых котлов',
+      price: 'от 25000 ₽'
     },
     {
-      icon: 'Droplet',
-      title: 'Ремонт сантехники',
-      description: 'Замена и ремонт кранов, смесителей, унитазов',
-      price: 'от 800 ₽'
+      icon: 'Zap',
+      title: 'Бойлеры и нагрев',
+      description: 'Монтаж электрических и газовых бойлеров',
+      price: 'от 8000 ₽'
     },
     {
       icon: 'Thermometer',
-      title: 'Отопление и радиаторы',
-      description: 'Монтаж, ремонт и замена радиаторов, теплых полов',
-      price: 'от 3000 ₽'
+      title: 'Радиаторы и теплые полы',
+      description: 'Монтаж радиаторов, систем теплого пола',
+      price: 'от 4000 ₽'
     },
     {
-      icon: 'Home',
-      title: 'Теплый дом под ключ',
-      description: 'Комплексное обустройство системы отопления',
-      price: 'от 15000 ₽'
+      icon: 'PipeWrench',
+      title: 'Уличные коммуникации',
+      description: 'Канализация, водопровод на улице, скважины',
+      price: 'от 12000 ₽'
+    },
+    {
+      icon: 'Droplets',
+      title: 'Капельный полив',
+      description: 'Системы автоматического полива сада и огорода',
+      price: 'от 6000 ₽'
+    },
+    {
+      icon: 'Filter',
+      title: 'Фильтрация воды',
+      description: 'Установка фильтров в доме и на улице',
+      price: 'от 3500 ₽'
     },
     {
       icon: 'Wrench',
-      title: 'Замена труб',
-      description: 'Монтаж водопроводных и канализационных систем',
-      price: 'от 2000 ₽'
+      title: 'Устранение засоров',
+      description: 'Прочистка труб, канализации, раковин',
+      price: 'от 1500 ₽'
     },
     {
       icon: 'Briefcase',
@@ -162,11 +174,11 @@ const Index = () => {
             <div className="animate-fade-in">
               <Badge className="mb-4">Работаем с 2010 года</Badge>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Сантехник с отоплением
+                Комплексный сантехник
                 <span className="text-primary block">в вашем районе</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Качественный ремонт сантехники, отопление, теплый пол и аварийные работы. 
+                Полный спектр услуг: сантехника, отопление, газовые котлы, полив, фильтрация. 
                 Гарантия на все виды услуг. Приезжаем в течение часа.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -229,7 +241,7 @@ const Index = () => {
             <p className="text-xl text-gray-600">Профессиональное решение любых сантехнических задач</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-lg transition-shadow duration-300 animate-fade-in">
                 <CardContent className="p-6 text-center">
