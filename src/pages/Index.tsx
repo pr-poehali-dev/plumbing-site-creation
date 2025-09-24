@@ -27,6 +27,18 @@ const Index = () => {
       price: 'от 800 ₽'
     },
     {
+      icon: 'Thermometer',
+      title: 'Отопление и радиаторы',
+      description: 'Монтаж, ремонт и замена радиаторов, теплых полов',
+      price: 'от 3000 ₽'
+    },
+    {
+      icon: 'Home',
+      title: 'Теплый дом под ключ',
+      description: 'Комплексное обустройство системы отопления',
+      price: 'от 15000 ₽'
+    },
+    {
       icon: 'Wrench',
       title: 'Замена труб',
       description: 'Монтаж водопроводных и канализационных систем',
@@ -42,6 +54,16 @@ const Index = () => {
 
   const galleryItems = [
     {
+      title: 'Установка радиатора',
+      before: 'img/0d4dae1d-1698-4f06-b530-ad365ba8502b.jpg',
+      after: 'img/0d4dae1d-1698-4f06-b530-ad365ba8502b.jpg'
+    },
+    {
+      title: 'Монтаж теплого пола',
+      before: 'img/424aea91-47ee-4300-9c4f-9aaf9c8fbfbf.jpg',
+      after: 'img/424aea91-47ee-4300-9c4f-9aaf9c8fbfbf.jpg'
+    },
+    {
       title: 'Замена смесителя',
       before: '/placeholder.svg',
       after: '/placeholder.svg'
@@ -55,6 +77,11 @@ const Index = () => {
       title: 'Прочистка канализации',
       before: '/placeholder.svg',
       after: '/placeholder.svg'
+    },
+    {
+      title: 'Комплексное отопление',
+      before: 'img/424aea91-47ee-4300-9c4f-9aaf9c8fbfbf.jpg',
+      after: 'img/424aea91-47ee-4300-9c4f-9aaf9c8fbfbf.jpg'
     }
   ];
 
@@ -135,11 +162,11 @@ const Index = () => {
             <div className="animate-fade-in">
               <Badge className="mb-4">Работаем с 2010 года</Badge>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Надежный сантехник
+                Сантехник с отоплением
                 <span className="text-primary block">в вашем районе</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Качественный ремонт сантехники, устранение засоров и аварийные работы. 
+                Качественный ремонт сантехники, отопление, теплый пол и аварийные работы. 
                 Гарантия на все виды услуг. Приезжаем в течение часа.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -202,7 +229,7 @@ const Index = () => {
             <p className="text-xl text-gray-600">Профессиональное решение любых сантехнических задач</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-lg transition-shadow duration-300 animate-fade-in">
                 <CardContent className="p-6 text-center">
