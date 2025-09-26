@@ -28,15 +28,9 @@ const Index = () => {
     },
     {
       icon: 'Thermometer',
-      title: 'Радиаторы отопления',
-      description: 'Монтаж, замена и ремонт радиаторов',
+      title: 'Радиаторы и теплые полы',
+      description: 'Монтаж радиаторов, систем теплого пола',
       price: 'от 4000 ₽'
-    },
-    {
-      icon: 'Waves',
-      title: 'Водяные теплые полы',
-      description: 'Монтаж водяных теплых полов под ключ',
-      price: 'от 1200 ₽/м²'
     },
     {
       icon: 'PipeWrench',
@@ -95,11 +89,6 @@ const Index = () => {
       title: 'Прочистка канализации',
       before: '/placeholder.svg',
       after: '/placeholder.svg'
-    },
-    {
-      title: 'Монтаж водяного теплого пола',
-      before: 'img/33607a7f-ffb2-4cad-a9c2-5ac5fc99e72b.jpg',
-      after: 'img/33607a7f-ffb2-4cad-a9c2-5ac5fc99e72b.jpg'
     },
     {
       title: 'Комплексное отопление',
@@ -169,14 +158,10 @@ const Index = () => {
 
             <div className="flex items-center space-x-4">
               <div className="hidden md:block text-right">
-                <p className="text-sm text-gray-600">Звоните с 9:00 до 17:00</p>
-                <a href="tel:+79782973593" className="text-lg font-semibold text-gray-900 hover:text-primary transition-colors">
-                  +7 (978) 297-35-93
-                </a>
+                <p className="text-sm text-gray-600">Звоните прямо сейчас</p>
+                <p className="text-lg font-semibold text-gray-900">+7 (999) 123-45-67</p>
               </div>
-              <Button asChild>
-                <a href="tel:+79782973593">Вызвать мастера</a>
-              </Button>
+              <Button>Вызвать мастера</Button>
             </div>
           </div>
         </div>
@@ -197,17 +182,13 @@ const Index = () => {
                 Гарантия на все виды услуг. Приезжаем в течение часа.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-lg px-8" asChild>
-                  <a href="tel:+79782973593">
-                    <Icon name="Phone" className="mr-2 h-5 w-5" />
-                    Позвонить
-                  </a>
+                <Button size="lg" className="text-lg px-8">
+                  <Icon name="Phone" className="mr-2 h-5 w-5" />
+                  Вызвать мастера
                 </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 bg-green-500 hover:bg-green-600 text-white border-green-500" asChild>
-                  <a href="https://wa.me/79782973593?text=Здравствуйте! Хочу заказать сантехнические работы" target="_blank" rel="noopener noreferrer">
-                    <Icon name="MessageSquare" className="mr-2 h-5 w-5" />
-                    WhatsApp
-                  </a>
+                <Button variant="outline" size="lg" className="text-lg px-8">
+                  <Icon name="Calculator" className="mr-2 h-5 w-5" />
+                  Рассчитать стоимость
                 </Button>
               </div>
             </div>
@@ -277,18 +258,10 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild>
-              <a href="tel:+79782973593">
-                <Icon name="Phone" className="mr-2 h-5 w-5" />
-                Заказать услугу
-              </a>
-            </Button>
-            <Button size="lg" className="bg-green-500 hover:bg-green-600" asChild>
-              <a href="https://wa.me/79782973593?text=Хочу узнать стоимость услуг" target="_blank" rel="noopener noreferrer">
-                <Icon name="MessageSquare" className="mr-2 h-5 w-5" />
-                Написать в WhatsApp
-              </a>
+          <div className="text-center mt-12">
+            <Button size="lg">
+              <Icon name="Phone" className="mr-2 h-5 w-5" />
+              Заказать услугу
             </Button>
           </div>
         </div>
@@ -346,7 +319,7 @@ const Index = () => {
             <div className="animate-fade-in">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">О мастере</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Меня зовут Игорь, и я занимаюсь сантехническими работами уже более 14 лет. 
+                Меня зовут Алексей, и я занимаюсь сантехническими работами уже более 14 лет. 
                 За это время выполнил свыше 2000 заказов различной сложности.
               </p>
               <div className="space-y-4 mb-8">
@@ -375,7 +348,7 @@ const Index = () => {
                   <div className="bg-white/20 rounded-full p-6 mb-6 mx-auto w-24 h-24 flex items-center justify-center">
                     <Icon name="User" className="h-12 w-12 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">Игорь</h3>
+                  <h3 className="text-2xl font-bold mb-2">Алексей Петров</h3>
                   <p className="text-primary-foreground/80 mb-6">Сантехник-профессионал</p>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
@@ -409,10 +382,8 @@ const Index = () => {
                   <Icon name="Phone" className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Телефон</h3>
-                <p className="text-gray-600 mb-4">Пн-Сб: 9:00-17:00, Вс: выходной</p>
-                <a href="tel:+79782973593" className="text-xl font-bold text-primary hover:text-primary/80 transition-colors">
-                  +7 (978) 297-35-93
-                </a>
+                <p className="text-gray-600 mb-4">Звоните в любое время</p>
+                <p className="text-xl font-bold text-primary">+7 (999) 123-45-67</p>
               </CardContent>
             </Card>
 
@@ -423,12 +394,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">WhatsApp</h3>
                 <p className="text-gray-600 mb-4">Быстрые сообщения</p>
-                <Button variant="outline" asChild>
-                  <a href="https://wa.me/79782973593?text=Здравствуйте! Хочу заказать сантехнические работы" target="_blank" rel="noopener noreferrer">
-                    <Icon name="MessageSquare" className="mr-2 h-4 w-4" />
-                    Написать в WhatsApp
-                  </a>
-                </Button>
+                <Button variant="outline">Написать в WhatsApp</Button>
               </CardContent>
             </Card>
 
@@ -451,11 +417,9 @@ const Index = () => {
                 <p className="mb-6 text-primary-foreground/80">
                   Оставьте заявку и я перезвоню в течение 5 минут для уточнения деталей
                 </p>
-                <Button size="lg" variant="secondary" className="text-primary" asChild>
-                  <a href="tel:+79782973593">
-                    <Icon name="Phone" className="mr-2 h-5 w-5" />
-                    Позвонить сейчас
-                  </a>
+                <Button size="lg" variant="secondary" className="text-primary">
+                  <Icon name="Phone" className="mr-2 h-5 w-5" />
+                  Заказать обратный звонок
                 </Button>
               </CardContent>
             </Card>
